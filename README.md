@@ -5,7 +5,7 @@ Este repositorio documenta el proceso práctico de auditoría de seguridad y end
 ---
 
 ## 🛠️ 1. Herramientas y Entorno Utilizados
-* **Sistema Operativo:** Kali Linux[cite: 1] (VirtualBox)
+* **Sistema Operativo:** Kali Linux (VirtualBox)
 * **Servicio Evaluado:** OpenSSH Server (`sshd`)
 * **Herramienta de Auditoría:** `ssh-audit`
 
@@ -17,7 +17,8 @@ Al realizar la primera auditoría del servicio SSH por defecto, se identificaron
 * **Algoritmos y etiquetas de 64 bits (`umac-64`):** Advertencias en amarillo (`[warn]`) por su bajo nivel de seguridad frente a ataques modernos.
 
 > **Evidencia (Antes):**
-> *[Inserta aquí tu primera captura de pantalla con los errores en rojo]*
+<img width="1084" height="620" alt="Captura de pantalla 2026-10-09 213935" src="https://github.com/user-attachments/assets/5e8bb9a3-61ef-4ba8-888b-7d235ced2d3d" />
+
 
 ---
 
@@ -27,3 +28,8 @@ Para corregir los hallazgos anteriores, se modificó el archivo de configuració
 1. Se abrió el archivo de configuración con privilegios de superusuario:
    ```bash
    sudo nano /etc/ssh/sshd_config
+
+
+## 4. Estado Final (Después del Hardening)
+> **Evidencia (Después):**
+> <img width="1336" height="788" alt="Captura de pantalla 2026-10-09 215146" src="https://github.com/user-attachments/assets/2ee806ae-5806-43f5-a327-2218a48aa761" />
